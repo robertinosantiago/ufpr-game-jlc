@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Game Escape Room</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+</head>
+<body>
+    <div id="div-game"></div>
+
+    <!-- Modal Abertura -->
+    <div class="modal fade" id="modalSobre" tabindex="-1" role="dialog" aria-labelledby="modalSobreLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalSobreLabel">Sobre o Jogo</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <h2>Jogo Escape Room Exemplo</h2>
+              <p>Jogo desenvolvido por <strong>Robertino Mendes Santiago Jr</strong> para ser utilizado como modelo na disciplina de Programação para a Internet.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Cenario 1 -->
+      <div class="modal fade" id="modalC1Dica1" tabindex="-1" role="dialog" aria-labelledby="modalC1Dica1Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalC1Dica1Label">Dica 1</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, eligendi. Adipisci, officia eligendi omnis incidunt quos ab doloremque maxime provident! Accusantium quod assumenda minima veniam atque hic praesentium ullam expedita.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="modalC1Dica2" tabindex="-1" role="dialog" aria-labelledby="modalC1Dica2Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalC1Dica2Label">Dica 2</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, eligendi. Adipisci, officia eligendi omnis incidunt quos ab doloremque maxime provident! Accusantium quod assumenda minima veniam atque hic praesentium ullam expedita.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="modalC1Questao" tabindex="-1" role="dialog" aria-labelledby="modalC1QuestaoLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalC1QuestaoLabel">Questão</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <p>Descrição da pergunta</p>
+                <button id="c1-alternativa1" class="btn btn-success btn-block">Alternativa 1</button>
+                <button id="c1-alternativa2" class="btn btn-success btn-block">Alternativa 2</button>
+                <button id="c1-alternativa3" class="btn btn-success btn-block">Alternativa 3</button>
+                <button id="c1-alternativa4" class="btn btn-success btn-block">Alternativa 4</button>
+                <button id="c1-alternativa5" class="btn btn-success btn-block">Alternativa 5</button>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Cenario 2 -->
+      <div class="modal fade" id="modalC2Dica1" tabindex="-1" role="dialog" aria-labelledby="modalC2Dica1Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalC2Dica1Label">Dica 1</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, eligendi. Adipisci, officia eligendi omnis incidunt quos ab doloremque maxime provident! Accusantium quod assumenda minima veniam atque hic praesentium ullam expedita.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="modalC2Dica2" tabindex="-1" role="dialog" aria-labelledby="modalC2Dica2Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalC2Dica2Label">Dica 2</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, eligendi. Adipisci, officia eligendi omnis incidunt quos ab doloremque maxime provident! Accusantium quod assumenda minima veniam atque hic praesentium ullam expedita.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="modalC2Questao" tabindex="-1" role="dialog" aria-labelledby="modalC2QuestaoLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalC2QuestaoLabel">Questão</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <p>Descrição da pergunta</p>
+                <button id="c2-alternativa1" class="btn btn-success btn-block">Alternativa 1</button>
+                <button id="c2-alternativa2" class="btn btn-success btn-block">Alternativa 2</button>
+                <button id="c2-alternativa3" class="btn btn-success btn-block">Alternativa 3</button>
+                <button id="c2-alternativa4" class="btn btn-success btn-block">Alternativa 4</button>
+                <button id="c2-alternativa5" class="btn btn-success btn-block">Alternativa 5</button>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/phaser@3.16.2/dist/phaser.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/MenuPrincipal.js"></script>
+    <script src="js/Abertura.js"></script>
+    <script src="js/Cenario1.js"></script>
+    <script src="js/Cenario2.js"></script>
+    <script src="js/Encerramento.js"></script>
+</body>
+</html>
